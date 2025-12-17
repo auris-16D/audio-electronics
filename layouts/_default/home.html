@@ -1,16 +1,24 @@
 {{ define "main" }}
-<article>
+<article class="home">
+
   <h1>{{ .Title }}</h1>
 
   {{ .Content }}
 
-  <h2>Phases</h2>
-  <ul>
-    {{ range where .Site.Sections "Title" "ne" "" }}
-    <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+  <hr>
+
+  <section>
+    <h2>Learning Phases</h2>
+    <p>Follow these phases in order. Each one builds deliberately on the last.</p>
+
+    <ol>
+      {{ range where .Site.Sections "Title" "ne" "" }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ol>
+  </section>
+
 </article>
 {{ end }}
