@@ -4,12 +4,16 @@
 
   {{ .Content }}
 
-  <ul>
-    {{ range .Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+  {{ $lessons := .RegularPages }}
+  {{ if $lessons }}
+    <h2>Lessons</h2>
+    <ul>
+      {{ range $lessons.ByTitle }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p><em>No lessons yet.</em></p>
+  {{ end }}
 </article>
 {{ end }}
