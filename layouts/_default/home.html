@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <h2>Phases</h2>
+  <ul>
+    {{ range where .Site.Sections "Title" "ne" "" }}
+    <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

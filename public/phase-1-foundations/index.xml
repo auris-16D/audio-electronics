@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phase 1 — Foundations on Audio Electronics Learning Lab</title>
+    <link>http://localhost:1313/phase-1-foundations/</link>
+    <description>Recent content in Phase 1 — Foundations on Audio Electronics Learning Lab</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <atom:link href="http://localhost:1313/phase-1-foundations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lesson 1 1 Signal Flow</title>
+      <link>http://localhost:1313/phase-1-foundations/lesson-1-1-signal-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/phase-1-foundations/lesson-1-1-signal-flow/</guid>
+      <description>&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;&#xA;&lt;p&gt;Clearly state what this lesson exists to teach.&lt;/p&gt;&#xA;&lt;h2 id=&#34;core-concept&#34;&gt;Core Concept&lt;/h2&gt;&#xA;&lt;p&gt;Explain the main idea in plain language.&lt;/p&gt;&#xA;&lt;h2 id=&#34;real-world-context&#34;&gt;Real-World Context&lt;/h2&gt;&#xA;&lt;p&gt;Where this appears in real audio / Hi-Fi equipment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;common-failure-modes&#34;&gt;Common Failure Modes&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What goes wrong&lt;/li&gt;&#xA;&lt;li&gt;How it presents&lt;/li&gt;&#xA;&lt;li&gt;Why it matters&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;interactive-challenge&#34;&gt;Interactive Challenge&lt;/h2&gt;&#xA;&lt;p&gt;Pose a diagnostic or reasoning problem.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reflection&#34;&gt;Reflection&lt;/h2&gt;&#xA;&lt;p&gt;What assumption should be questioned after this lesson?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="lesson">
+
+<h1>{{ .Title }}</h1>
+
+{{ with .Params.phase }}
+<p><strong>Phase:</strong> {{ . }}</p>
+{{ end }}
+
+{{ with .Params.difficulty }}
+<p><strong>Difficulty:</strong> {{ . }}</p>
+{{ end }}
+
+{{ .Content }}
+
+</article>
+{{ end }}

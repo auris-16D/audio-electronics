@@ -1,0 +1,12 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-gb"
+title = "Audio Electronics Learning Lab"
+
+[params]
+  author = "Nigel Surtees"
+  description = "A structured, audio-focused electronics learning notebook."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
