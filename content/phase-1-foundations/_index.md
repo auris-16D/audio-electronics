@@ -1,5 +1,6 @@
 ---
 title: "Phase 1 — Foundations"
+weight: 10
 ---
 
 This phase builds core mental models used throughout audio electronics.

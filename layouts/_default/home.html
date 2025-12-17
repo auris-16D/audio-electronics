@@ -12,7 +12,7 @@
     <p>Follow these phases in order. Each one builds deliberately on the last.</p>
 
     <ol>
-      {{ range where .Site.Sections "Title" "ne" "" }}
+      {{ range where .Site.Sections.ByWeight "Title" "ne" "" }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
