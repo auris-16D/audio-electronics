@@ -13,3 +13,5 @@ title = "Audio Electronics Learning Lab"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+[taxonomies]
+  tag = "tags"

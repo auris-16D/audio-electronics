@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <defs>
+    <style>
+      .w { stroke:#000; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .t { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:16px; fill:#000; }
+      .ts { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:14px; fill:#000; }
+      .tb { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:18px; font-weight:700; fill:#000; }
+      .node { fill:#000; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="40" y="40" class="tb">Rotel RM-5010 — Stereo AUX Input Interface (isolated jack + coupling caps + optional resistors)</text>
+
+  <!-- Section labels -->
+  <text x="40" y="90" class="t">Rear panel AUX jack (isolated from chassis)</text>
+  <text x="720" y="90" class="t">Rotel input PCB / selector / Tape-In pads</text>
+
+  <!-- Common signal ground bus (SG) -->
+  <text x="720" y="540" class="t">SG = Rotel signal ground (tie AUX ground here, single-point)</text>
+  <path d="M720 520 H1120" class="w"/>
+  <text x="1130" y="525" class="ts">SG</text>
+
+  <!-- Left channel block -->
+  <text x="40" y="140" class="t">LEFT CHANNEL (L)</text>
+
+  <!-- Left jack symbol -->
+  <rect x="40" y="160" width="260" height="160" class="w"/>
+  <text x="60" y="190" class="t">J1-L (RCA)</text>
+  <text x="60" y="215" class="ts">Tip = L</text>
+  <text x="60" y="240" class="ts">Sleeve = SG</text>
+  <text x="60" y="265" class="ts">(isolated from chassis)</text>
+
+  <!-- Left jack terminals -->
+  <circle cx="300" cy="205" r="4" class="node"/>
+  <circle cx="300" cy="275" r="4" class="node"/>
+  <text x="315" y="210" class="ts">Tip(L)</text>
+  <text x="315" y="280" class="ts">Sleeve</text>
+
+  <!-- Shielded cable note -->
+  <text x="360" y="185" class="ts">Shielded cable (core = signal, shield = return)</text>
+
+  <!-- Left signal path: Tip -> C1 -> RS_L -> IN_L node -->
+  <path d="M300 205 H380" class="w"/>
+
+  <!-- C1 capacitor symbol (series) -->
+  <path d="M380 185 V225" class="w"/>
+  <path d="M395 185 V225" class="w"/>
+  <path d="M380 205 H395" class="w"/>
+  <text x="365" y="170" class="ts">C1 1–4.7µF</text>
+
+  <path d="M395 205 H460" class="w"/>
+
+  <!-- RS_L resistor symbol -->
+  <path d="M460 205 h20 l10 -10 l10 20 l10 -20 l10 20 l10 -20 l10 20 l10 -10 h20" class="w"/>
+  <text x="460" y="185" class="ts">RS_L (optional)</text>
+  <text x="460" y="230" class="ts">220Ω–1k</text>
+
+  <path d="M560 205 H700" class="w"/>
+  <circle cx="700" cy="205" r="4" class="node"/>
+  <text x="710" y="210" class="ts">IN_L</text>
+
+  <!-- Pull-down resistor RPD_L to SG -->
+  <path d="M700 205 V255" class="w"/>
+  <path d="M700 255 h20 l10 -10 l10 20 l10 -20 l10 20 l10 -20 l10 20 l10 -10 h20" class="w"/>
+  <text x="725" y="250" class="ts">RPD_L 47k–100k</text>
+  <path d="M820 255 V520" class="w"/>
+
+  <!-- Left sleeve/return to SG bus -->
+  <path d="M300 275 H520" class="w"/>
+  <path d="M520 275 V520" class="w"/>
+  <text x="360" y="300" class="ts">Return/shield</text>
+
+  <!-- Right channel block -->
+  <text x="40" y="360" class="t">RIGHT CHANNEL (R)</text>
+
+  <!-- Right jack symbol -->
+  <rect x="40" y="380" width="260" height="160" class="w"/>
+  <text x="60" y="410" class="t">J1-R (RCA)</text>
+  <text x="60" y="435" class="ts">Tip = R</text>
+  <text x="60" y="460" class="ts">Sleeve = SG</text>
+  <text x="60" y="485" class="ts">(isolated from chassis)</text>
+
+  <!-- Right jack terminals -->
+  <circle cx="300" cy="425" r="4" class="node"/>
+  <circle cx="300" cy="495" r="4" class="node"/>
+  <text x="315" y="430" class="ts">Tip(R)</text>
+  <text x="315" y="500" class="ts">Sleeve</text>
+
+  <!-- Right signal path: Tip -> C2 -> RS_R -> IN_R node -->
+  <path d="M300 425 H380" class="w"/>
+
+  <!-- C2 capacitor symbol (series) -->
+  <path d="M380 405 V445" class="w"/>
+  <path d="M395 405 V445" class="w"/>
+  <path d="M380 425 H395" class="w"/>
+  <text x="365" y="390" class="ts">C2 1–4.7µF</text>
+
+  <path d="M395 425 H460" class="w"/>
+
+  <!-- RS_R resistor symbol -->
+  <path d="M460 425 h20 l10 -10 l10 20 l10 -20 l10 20 l10 -20 l10 20 l10 -10 h20" class="w"/>
+  <text x="460" y="405" class="ts">RS_R (optional)</text>
+  <text x="460" y="450" class="ts">220Ω–1k</text>
+
+  <path d="M560 425 H700" class="w"/>
+  <circle cx="700" cy="425" r="4" class="node"/>
+  <text x="710" y="430" class="ts">IN_R</text>
+
+  <!-- Pull-down resistor RPD_R to SG -->
+  <path d="M700 425 V475" class="w"/>
+  <path d="M700 475 h20 l10 -10 l10 20 l10 -20 l10 20 l10 -20 l10 20 l10 -10 h20" class="w"/>
+  <text x="725" y="470" class="ts">RPD_R 47k–100k</text>
+  <path d="M820 475 V520" class="w"/>
+
+  <!-- Right sleeve/return to SG bus -->
+  <path d="M300 495 H520" class="w"/>
+  <path d="M520 495 V520" class="w"/>
+  <text x="360" y="520" class="ts"></text>
+
+  <!-- Input pad labels -->
+  <text x="720" y="130" class="ts">Connect IN_L, IN_R, and SG to the Rotel Tape-In or selector input pads.</text>
+  <text x="720" y="155" class="ts">Do NOT connect jack sleeve to chassis at rear panel; keep isolation.</text>
+
+  <!-- Small note -->
+  <text x="40" y="600" class="ts">Notes: RS_L/RS_R optional; RPD_L/RPD_R recommended. Use shielded cable; keep runs short; single-point SG tie.</text>
+</svg>

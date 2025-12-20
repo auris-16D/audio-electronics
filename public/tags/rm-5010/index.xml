@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rm-5010 on Audio Electronics Learning Lab</title>
+    <link>http://localhost:1313/tags/rm-5010/</link>
+    <description>Recent content in Rm-5010 on Audio Electronics Learning Lab</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rm-5010/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rotel RM-5010 — AUX Input Implementation</title>
+      <link>http://localhost:1313/notes/aux-in-rotel-rm-5010/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/aux-in-rotel-rm-5010/</guid>
+      <description>Add a stereo AUX input using an isolated jack, coupling capacitors, optional RF resistors, and correct single-point signal grounding.</description>
+    </item>
+    <item>
+      <title>Rotel RM-5010 — LED Dial / Panel Lighting Conversion</title>
+      <link>http://localhost:1313/notes/led-dial-lamps-rm-5010/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/led-dial-lamps-rm-5010/</guid>
+      <description>Replacing 12 VAC dial lamps with LED assemblies using bridge rectification, smoothing capacitors, and PWM dimming.</description>
+    </item>
+  </channel>
+</rss>
