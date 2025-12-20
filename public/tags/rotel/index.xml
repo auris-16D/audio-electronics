@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/notes/led-dial-lamps-rm-5010/</guid>
       <description>Replacing 12 VAC dial lamps with LED assemblies using bridge rectification, smoothing capacitors, and PWM dimming.</description>
     </item>
+    <item>
+      <title>Rotel RM-5010 – Service Report</title>
+      <link>http://localhost:1313/notes/rotel-rm-5010-service-report/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/rotel-rm-5010-service-report/</guid>
+      <description>Electrical and mechanical service report for a Rotel RM-5010 receiver, including tonearm rebuild, LED conversion, recap, and auxiliary input modification.</description>
+    </item>
   </channel>
 </rss>
