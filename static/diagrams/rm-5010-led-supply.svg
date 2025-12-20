@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <style>
+      .w { stroke:#000; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .t { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:16px; fill:#000; }
+      .ts { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:14px; fill:#000; }
+      .tb { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:18px; font-weight:700; fill:#000; }
+      .node { fill:#000; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="40" y="40" class="tb">Rotel RM-5010 — LED Dial/Panel Supply (12 VAC → Bridge → Smoothing → PWM → LED branches)</text>
+
+  <!-- Left labels -->
+  <text x="40" y="90" class="t">12 VAC lamp winding (transformer secondary)</text>
+
+  <!-- AC terminals -->
+  <circle cx="80" cy="140" r="4" class="node"/>
+  <circle cx="80" cy="200" r="4" class="node"/>
+  <text x="30" y="145" class="ts">AC~</text>
+  <text x="30" y="205" class="ts">AC~</text>
+
+  <!-- Wires from AC terminals to fuse/bridge -->
+  <path d="M80 140 H170" class="w"/>
+  <path d="M80 200 H240" class="w"/>
+
+  <!-- Fuse on top AC leg -->
+  <text x="175" y="125" class="ts">F1 T250mA</text>
+  <rect x="170" y="132" width="70" height="16" class="w"/>
+  <path d="M175 140 H235" class="w"/>
+
+  <!-- Continue top AC wire after fuse to bridge -->
+  <path d="M240 140 H300" class="w"/>
+
+  <!-- Bottom AC wire to bridge -->
+  <path d="M240 200 H300" class="w"/>
+
+  <!-- Bridge rectifier diamond -->
+  <text x="290" y="90" class="t">Bridge rectifier (BR1 ≥1A, ≥50V)</text>
+
+  <!-- Diamond outline -->
+  <path d="M350 170 L400 120 L450 170 L400 220 Z" class="w"/>
+
+  <!-- AC inputs to diamond left/right -->
+  <path d="M300 140 L350 170" class="w"/>
+  <path d="M300 200 L350 170" class="w"/>
+
+  <!-- DC outputs from diamond top/bottom -->
+  <path d="M400 120 V80" class="w"/>
+  <path d="M400 220 V260" class="w"/>
+
+  <circle cx="400" cy="80" r="4" class="node"/>
+  <circle cx="400" cy="260" r="4" class="node"/>
+
+  <text x="415" y="85" class="ts">+DC</text>
+  <text x="415" y="265" class="ts">0V (GND)</text>
+
+  <!-- DC rails (pre-smoothing) -->
+  <path d="M400 80 H560" class="w"/>
+  <path d="M400 260 H560" class="w"/>
+
+  <!-- Smoothing capacitor bank across rails -->
+  <text x="560" y="90" class="t">Smoothing capacitors (in parallel across rails)</text>
+
+  <!-- Capacitor symbols C1-C3 -->
+  <!-- C1 -->
+  <path d="M580 120 V160" class="w"/>
+  <path d="M570 160 H590" class="w"/>
+  <path d="M570 175 H590" class="w"/>
+  <path d="M580 175 V220" class="w"/>
+  <path d="M580 120 V80" class="w"/>
+  <path d="M580 220 V260" class="w"/>
+  <text x="600" y="175" class="ts">C1 1000µF ≥25V</text>
+
+  <!-- C2 -->
+  <path d="M580 260 V300" class="w" opacity="0"/> <!-- spacer (invisible) -->
+
+  <path d="M740 120 V160" class="w"/>
+  <path d="M730 160 H750" class="w"/>
+  <path d="M730 175 H750" class="w"/>
+  <path d="M740 175 V220" class="w"/>
+  <path d="M740 120 V80" class="w"/>
+  <path d="M740 220 V260" class="w"/>
+  <text x="760" y="175" class="ts">C2 1000µF ≥25V</text>
+
+  <!-- C3 -->
+  <path d="M900 120 V160" class="w"/>
+  <path d="M890 160 H910" class="w"/>
+  <path d="M890 175 H910" class="w"/>
+  <path d="M900 175 V220" class="w"/>
+  <path d="M900 120 V80" class="w"/>
+  <path d="M900 220 V260" class="w"/>
+  <text x="920" y="175" class="ts">C3 1000µF ≥25V</text>
+
+  <!-- Rail continuation to PWM -->
+  <path d="M560 80 H1020" class="w"/>
+  <path d="M560 260 H1020" class="w"/>
+
+  <!-- Optional small film cap note -->
+  <text x="560" y="115" class="ts">Optional: 100nF film across +DC and GND near BR1/caps</text>
+
+  <!-- PWM block -->
+  <text x="40" y="330" class="t">PWM dimmer module placed AFTER smoothing and BEFORE LED branches (controls all branches together)</text>
+
+  <rect x="500" y="320" width="260" height="120" class="w"/>
+  <text x="520" y="350" class="t">PWM DIMMER</text>
+  <text x="520" y="372" class="ts">(9–60V DC motor/LED PWM)</text>
+
+  <!-- PWM input terminals -->
+  <circle cx="500" cy="350" r="4" class="node"/>
+  <circle cx="500" cy="410" r="4" class="node"/>
+  <text x="430" y="355" class="ts">IN +</text>
+  <text x="430" y="415" class="ts">IN −</text>
+
+  <!-- PWM output terminals -->
+  <circle cx="760" cy="350" r="4" class="node"/>
+  <circle cx="760" cy="410" r="4" class="node"/>
+  <text x="780" y="355" class="ts">OUT +</text>
+  <text x="780" y="415" class="ts">OUT −</text>
+
+  <!-- Connect rails to PWM IN -->
+  <path d="M650 80 V350 H500" class="w"/>
+  <path d="M650 260 V410 H500" class="w"/>
+
+  <!-- Output rails from PWM -->
+  <path d="M760 350 H1040" class="w"/>
+  <path d="M760 410 H1040" class="w"/>
+
+  <!-- Label output rails -->
+  <text x="1048" y="355" class="ts">+PWM</text>
+  <text x="1048" y="415" class="ts">0V</text>
+
+  <!-- LED branches (3 in parallel), each: resistor then 2 LEDs in series -->
+  <text x="40" y="480" class="t">Three LED branches in parallel (each branch has its own current-limiting resistor)</text>
+
+  <!-- Branch 1 -->
+  <text x="80" y="535" class="ts">Branch 1: R1 ≈470Ω 0.5W</text>
+  <path d="M1040 350 H1060 V520 H940" class="w"/>
+
+  <!-- Resistor symbol (zigzag) -->
+  <path d="M940 520 h20 l10 -10 l10 20 l10 -20 l10 20 l10 -20 l10 20 l10 -10 h20" class="w"/>
+  <text x="940" y="505" class="ts">R1</text>
+
+  <!-- LED1 diode symbol -->
+  <path d="M1060 520 H1090" class="w"/>
+  <path d="M1090 510 L1110 520 L1090 530 Z" class="w"/>
+  <path d="M1115 510 V530" class="w"/>
+  <text x="1085" y="550" class="ts">LED1</text>
+
+  <!-- LED2 diode symbol -->
+  <path d="M1115 520 H1145" class="w"/>
+  <path d="M1145 510 L1165 520 L1145 530 Z" class="w"/>
+  <path d="M1170 510 V530" class="w"/>
+  <text x="1140" y="550" class="ts">LED2</text>
+
+  <!-- Return to 0V -->
+  <path d="M1170 520 H1180 V580 H1040" class="w"/>
+  <path d="M1040 580 V410" class="w"/>
+
+  <!-- Branch 2 -->
+  <text x="80" y="615" class="ts">Branch 2: R2 ≈470Ω 0.5W</text>
+  <path d="M1040 350 H1060 V600 H940" class="w"/>
+
+  <path d="M940 600 h20 l10 -10 l10 20 l10 -20 l10 20 l10 -20 l10 20 l10 -10 h20" class="w"/>
+  <text x="940" y="585" class="ts">R2</text>
+
+  <path d="M1060 600 H1090" class="w"/>
+  <path d="M1090 590 L1110 600 L1090 610 Z" class="w"/>
+  <path d="M1115 590 V610" class="w"/>
+  <text x="1085" y="630" class="ts">LED3</text>
+
+  <path d="M1115 600 H1145" class="w"/>
+  <path d="M1145 590 L1165 600 L1145 610 Z" class="w"/>
+  <path d="M1170 590 V610" class="w"/>
+  <text x="1140" y="630" class="ts">LED4</text>
+
+  <path d="M1170 600 H1180 V660 H1040" class="w"/>
+  <path d="M1040 660 V410" class="w"/>
+
+  <!-- Branch 3 -->
+  <text x="80" y="695" class="ts">Branch 3: R3 ≈470Ω 0.5W</text>
+  <path d="M1040 350 H1060 V680 H940" class="w"/>
+
+  <path d="M940 680 h20 l10 -10 l10 20 l10 -20 l10 20 l10 -20 l10 20 l10 -10 h20" class="w"/>
+  <text x="940" y="665" class="ts">R3</text>
+
+  <path d="M1060 680 H1090" class="w"/>
+  <path d="M1090 670 L1110 680 L1090 690 Z" class="w"/>
+  <path d="M1115 670 V690" class="w"/>
+  <text x="1085" y="710" class="ts">LED5</text>
+
+  <path d="M1115 680 H1145" class="w"/>
+  <path d="M1145 670 L1165 680 L1145 690 Z" class="w"/>
+  <path d="M1170 670 V690" class="w"/>
+  <text x="1140" y="710" class="ts">LED6</text>
+
+  <path d="M1170 680 H1180 V740 H1040" class="w"/>
+  <path d="M1040 740 V410" class="w"/>
+
+  <!-- Notes -->
+  <text x="40" y="740" class="ts">Notes: C1–C3 are in parallel across +DC/GND. PWM must be on the DC side. Keep wiring short; run +/− together to minimise loop area.</text>
+</svg>
