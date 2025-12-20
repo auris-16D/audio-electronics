@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title>Rotel RM-5010 — LED Dial / Panel Lighting Conversion | Audio Electronics Learning Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+
+<header>
+  <h1><a href="/">Audio Electronics Learning Lab</a></h1>
+</header>
+
+<main>
+  
+<article>
+  <h1>Rotel RM-5010 — LED Dial / Panel Lighting Conversion</h1>
+  <p><small>2025-12-20</small></p>
+  
+    <p>
+      
+        <span style="padding:0 .4rem; border:1px solid #ddd; border-radius:999px; margin-right:.25rem;">rotel</span>
+      
+        <span style="padding:0 .4rem; border:1px solid #ddd; border-radius:999px; margin-right:.25rem;">rm-5010</span>
+      
+        <span style="padding:0 .4rem; border:1px solid #ddd; border-radius:999px; margin-right:.25rem;">led</span>
+      
+        <span style="padding:0 .4rem; border:1px solid #ddd; border-radius:999px; margin-right:.25rem;">lighting</span>
+      
+        <span style="padding:0 .4rem; border:1px solid #ddd; border-radius:999px; margin-right:.25rem;">pwm</span>
+      
+        <span style="padding:0 .4rem; border:1px solid #ddd; border-radius:999px; margin-right:.25rem;">rectifier</span>
+      
+        <span style="padding:0 .4rem; border:1px solid #ddd; border-radius:999px; margin-right:.25rem;">capacitors</span>
+      
+    </p>
+  
+
+  <h2 id="outcome-agreed-implementation">Outcome (agreed implementation)</h2>
+<p>Replace the original 12 VAC dial/panel lamps with <strong>LED lighting</strong> that is:</p>
+<ul>
+<li>Flicker-free</li>
+<li>Dimmable with a single external control</li>
+<li>Electrically safe and reliable</li>
+<li>Reversible</li>
+<li>Thermally efficient</li>
+</ul>
+<p>The solution uses <strong>bridge rectification</strong>, <strong>smoothing capacitors</strong>, and a <strong>PWM dimmer</strong>.</p>
+<hr>
+<h2 id="electrical-overview">Electrical overview</h2>
+<ul>
+<li>Original supply: <strong>12 VAC lamp winding</strong></li>
+<li>Converted to DC using a bridge rectifier</li>
+<li>Smoothed using parallel electrolytic capacitors</li>
+<li>Brightness controlled using a PWM controller</li>
+<li>LEDs arranged as <strong>three parallel branches</strong>, each with its own current-limiting resistor</li>
+</ul>
+<hr>
+<h2 id="circuit-diagram-led-supply-and-loads">Circuit diagram (LED supply and loads)</h2>
+<p>Legend:</p>
+<ul>
+<li>AC = transformer lamp winding</li>
+<li>BR = bridge rectifier</li>
+<li>C1–C3 = smoothing capacitors (parallel)</li>
+<li>PWM = DC PWM dimmer module</li>
+<li>R1–R3 = LED current-limiting resistors</li>
+</ul>
+<p>LED DIAL / PANEL LIGHT SUPPLY (12 VAC → DC → PWM → LEDs)</p>
+<p><img src="/diagrams/rm-5010-led-supply.svg" alt="RM-5010 LED supply schematic"></p>
+<h2 id="pwm-dimmer-placement">PWM dimmer placement</h2>
+<p>The PWM controller is inserted <strong>after the smoothing capacitors</strong> and <strong>before the LED branches</strong>.</p>
+<p>+15V DC (smoothed) &mdash;-&gt; PWM IN +      PWM OUT + &mdash;-&gt; LED resistors
+GND / 0V &mdash;&mdash;&mdash;&mdash;- PWM IN -      PWM OUT - &mdash;-&gt; LED returns</p>
+<p>Notes:</p>
+<ul>
+<li>PWM controls <strong>all LED branches together</strong></li>
+<li>Current-limiting resistors are <strong>still required</strong></li>
+<li>PWM dimming avoids heat and provides smooth brightness control</li>
+</ul>
+<hr>
+<h2 id="component-values-final">Component values (final)</h2>
+<h3 id="fuse">Fuse</h3>
+<ul>
+<li><strong>T250 mA slow-blow</strong></li>
+<li>5×20 mm</li>
+<li>Fitted on the <strong>AC side</strong> of the lamp winding</li>
+</ul>
+<h3 id="bridge-rectifier">Bridge rectifier</h3>
+<ul>
+<li>≥ 1 A</li>
+<li>≥ 50 V</li>
+<li>Block or discrete diodes</li>
+</ul>
+<h3 id="smoothing-capacitors-c1c3">Smoothing capacitors (C1–C3)</h3>
+<ul>
+<li><strong>3 × 1000 µF in parallel</strong></li>
+<li><strong>≥ 25 V</strong> (35 V also fine)</li>
+<li>Total capacitance: <strong>3000 µF</strong></li>
+<li>Optional: add <strong>100 nF film capacitor</strong> across DC rails</li>
+</ul>
+<h3 id="leds">LEDs</h3>
+<ul>
+<li>Arranged as <strong>pairs in series</strong></li>
+<li>Three branches in parallel</li>
+</ul>
+<h3 id="led-resistors-r1r3">LED resistors (R1–R3)</h3>
+<ul>
+<li><strong>≈ 470 Ω</strong></li>
+<li><strong>0.5 W</strong></li>
+<li>One resistor per LED branch</li>
+</ul>
+<h3 id="pwm-controller">PWM controller</h3>
+<ul>
+<li>DC PWM dimmer</li>
+<li>Rated <strong>≥ 9–60 V DC</strong></li>
+<li>Current rating ≥ 1 A (your 20 A unit is fine)</li>
+</ul>
+<hr>
+<h2 id="wiring-and-layout-rules-key-points">Wiring and layout rules (key points)</h2>
+<ul>
+<li>Bridge rectifier, capacitors, and PWM <strong>mounted close together</strong></li>
+<li>DC + and − wiring run <strong>together</strong> to minimise loop area</li>
+<li>LED branches wired <strong>in parallel</strong></li>
+<li>Fuse placed on <strong>AC side</strong>, not DC side</li>
+<li>Capacitors connected <strong>in parallel</strong>, never in series</li>
+</ul>
+<hr>
+<h2 id="behaviour-observations">Behaviour observations</h2>
+<ul>
+<li>1000 µF total → visible flicker at low brightness</li>
+<li>2000 µF → improved but still noticeable</li>
+<li><strong>3000 µF → flicker eliminated</strong></li>
+<li>PWM dimming preferred over resistive dimming</li>
+<li>Voltage rating margin (≥25 V) improves capacitor longevity</li>
+</ul>
+<hr>
+<h2 id="implementation-checklist">Implementation checklist</h2>
+<ol>
+<li>Identify 12 VAC lamp winding</li>
+<li>Add T250 mA fuse on AC feed</li>
+<li>Build bridge + capacitor bank on perf board</li>
+<li>Add PWM controller after capacitor bank</li>
+<li>Wire three LED branches with individual resistors</li>
+<li>Keep wiring short and paired</li>
+<li>Test for flicker at low brightness</li>
+<li>Mount PWM knob for user access</li>
+</ol>
+<hr>
+<h3 id="one-sentence-summary">One-sentence summary</h3>
+<blockquote>
+<p>A fused 12 VAC lamp supply is bridge-rectified, smoothed with ~3000 µF, PWM-dimmed on the DC side, and feeds three parallel LED branches, each with its own current-limiting resistor.</p>
+</blockquote>
+
+</article>
+
+</main>
+
+<footer>
+  <p>© 2025 Nigel Surtees</p>
+</footer>
+
+</body>
+</html>

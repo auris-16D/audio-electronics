@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title>Lesson 1.3 — Coupling and Blocking: Why Capacitors Exist | Audio Electronics Learning Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+
+<header>
+  <h1><a href="/">Audio Electronics Learning Lab</a></h1>
+</header>
+
+<main>
+  
+<article>
+  <h1>Lesson 1.3 — Coupling and Blocking: Why Capacitors Exist</h1>
+  <h2 id="purpose">Purpose</h2>
+<p>This lesson explains <strong>why coupling exists between audio stages</strong>, and why capacitors are used so pervasively in audio circuits.</p>
+<p>It builds directly on:</p>
+<ul>
+<li>Lesson 1.1 — Signal Flow</li>
+<li>Lesson 1.2 — AC vs DC</li>
+</ul>
+<p>By the end of this lesson you should be able to:</p>
+<ul>
+<li>Describe the behavioural requirements of a stage interface</li>
+<li>Explain why DC must be blocked while AC is passed</li>
+<li>Understand why frequency matters for coupling</li>
+<li>Recognise classic capacitor-related failure symptoms</li>
+</ul>
+<hr>
+<h2 id="the-stage-interface-contract">The Stage Interface Contract</h2>
+<p>In a well-designed audio system:</p>
+<ul>
+<li>Each stage owns its <strong>DC operating conditions</strong></li>
+<li>Stages exchange <strong>AC information only</strong></li>
+<li>The interface between stages enforces this contract</li>
+</ul>
+<p>In behavioural terms, the interface must:</p>
+<ul>
+<li>Pass changing signals (AC)</li>
+<li>Reject steady-state levels (DC)</li>
+<li>Behave consistently regardless of what stage follows</li>
+</ul>
+<p>This separation is deliberate and fundamental.</p>
+<hr>
+<h2 id="why-time-and-frequency-matter">Why Time and Frequency Matter</h2>
+<p>DC is not a separate phenomenon from AC.</p>
+<blockquote>
+<p><strong>DC is simply AC at 0 Hz.</strong></p>
+</blockquote>
+<p>This has an important consequence:</p>
+<ul>
+<li>Very slow AC begins to resemble DC</li>
+<li>An interface that blocks DC must therefore also attenuate <em>very low frequencies</em></li>
+<li>Faster changes are easier to pass cleanly</li>
+</ul>
+<p>As a result:</p>
+<blockquote>
+<p><strong>An AC-passing / DC-blocking interface can never be frequency-neutral.</strong></p>
+</blockquote>
+<p>It will always:</p>
+<ul>
+<li>Reject 0 Hz completely</li>
+<li>Attenuate very low frequencies first</li>
+<li>Pass higher frequencies more easily</li>
+</ul>
+<p>This behaviour is unavoidable and must be designed around.</p>
+<hr>
+<h2 id="real-world-consequences">Real-World Consequences</h2>
+<p>Because slow changes are affected first, coupling problems often present as:</p>
+<ul>
+<li>Weak or missing bass</li>
+<li>Thin or “tinny” sound</li>
+<li>Audio that fades in after power-on</li>
+<li>Channels that work intermittently</li>
+<li>Silence despite healthy power rails</li>
+</ul>
+<p>Importantly:</p>
+<ul>
+<li>The stage itself may be functional</li>
+<li>The fault exists at the <strong>interface</strong></li>
+<li>No component needs to be completely open or shorted</li>
+</ul>
+<p>Partial degradation is enough.</p>
+<hr>
+<h2 id="why-capacitors-are-used">Why Capacitors Are Used</h2>
+<p>A capacitor is the simplest device that naturally:</p>
+<ul>
+<li>Blocks steady-state voltage (DC)</li>
+<li>Responds to change (AC)</li>
+<li>Responds more strongly to faster change than slower change</li>
+</ul>
+<p>This makes it a natural implementation of the stage interface contract.</p>
+<p>Capacitors are not arbitrary parts added “for sound” — they exist to enforce <strong>DC independence between stages</strong>.</p>
+<hr>
+<h2 id="key-takeaway">Key Takeaway</h2>
+<blockquote>
+<p><strong>Coupling is not about passing signal.<br>
+It is about preventing DC from propagating.</strong></p>
+</blockquote>
+<p>Loss of bass, delayed audio, and silent channels are often <strong>DC problems expressed as AC symptoms</strong>.</p>
+<p>Understanding this makes capacitor placement — and capacitor failure — intelligible.</p>
+<hr>
+<h2 id="reflection">Reflection</h2>
+<ul>
+<li>Where in your equipment have you seen bass loss without total failure?</li>
+<li>How might this explain “it works after warming up” faults?</li>
+<li>Which stages in an amplifier are most sensitive to coupling behaviour?</li>
+</ul>
+<p>This lesson sets the stage for understanding real capacitor choices and failures.</p>
+
+</article>
+
+</main>
+
+<footer>
+  <p>© 2025 Nigel Surtees</p>
+</footer>
+
+</body>
+</html>
