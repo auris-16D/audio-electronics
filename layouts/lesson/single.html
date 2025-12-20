@@ -1,7 +1,9 @@
 {{ define "main" }}
 <article class="lesson">
 
-<h1>{{ .Title }}</h1>
+{{ if not .IsHome }}
+  <h1>{{ .Title }}</h1>
+{{ end }}
 
 {{ with .Params.phase }}
 <p><strong>Phase:</strong> {{ . }}</p>
