@@ -7,12 +7,12 @@
   {{ end }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
-
 </head>
 <body>
 
 <header>
-  <h1><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></h1>
+  {{ partial "header.html" . }}
+  <h1>{{ .Site.Title }}</h1>
 </header>
 
 <main>
@@ -22,6 +22,18 @@
 <footer>
   <p>© {{ now.Year }} {{ .Site.Params.author }}</p>
 </footer>
+<script>
+  (function () {
+    const btn = document.querySelector(".nav__toggle");
+    const menu = document.querySelector("#nav-menu");
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", () => {
+      const open = menu.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  })();
+</script>
 
 </body>
 </html>

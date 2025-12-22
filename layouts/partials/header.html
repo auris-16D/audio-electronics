@@ -1,0 +1,26 @@
+<header class="site-header">
+    <div class="site-header__inner">
+      <!-- <div class="brand">
+        <a class="brand__link" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+      </div> -->
+  
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          Menu
+        </button>
+  
+        <ul id="nav-menu" class="nav__menu">
+          {{ range .Site.Menus.main }}
+            {{ $isActive := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+            <li class="nav__item">
+              <a class="nav__link {{ if $isActive }}is-active{{ end }}"
+                 href="{{ .URL | relURL }}">
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
