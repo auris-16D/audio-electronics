@@ -2,6 +2,7 @@
 title: "Lesson 1.2 — AC vs DC in Audio Circuits"
 phase: 1
 difficulty: foundational
+weight: 120
 ---
 
 ## Purpose

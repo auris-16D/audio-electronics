@@ -2,6 +2,7 @@
 title: "Lesson 1.3 — Coupling and Blocking: Why Capacitors Exist"
 phase: 1
 difficulty: foundational
+weight: 130
 ---
 
 ## Purpose
