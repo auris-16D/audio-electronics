@@ -1,5 +1,5 @@
-<link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
-<script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
+<link href='{{ "pagefind/pagefind-ui.css" | relURL }}' rel="stylesheet">
+<script src='{{ "pagefind/pagefind-ui.js" | relURL }}'></script>
 
 <div id="search"></div>
 
@@ -8,7 +8,7 @@
     new PagefindUI({
       element: "#search",
       showSubResults: true,
-      bundlePath: "{{ "pagefind/" | relURL }}"
+      bundlePath: '{{ "pagefind/" | relURL }}'
     });
   });
 </script>
