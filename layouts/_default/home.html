@@ -7,20 +7,5 @@
 
   {{ .Content }}
 
-  <hr>
-
-  <section>
-    <h2>Learning Phases</h2>
-    <p>Follow these phases in order. Each one builds deliberately on the last.</p>
-
-    <ol>
-      {{ range where .Site.Sections.ByWeight "Title" "ne" "" }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
-      {{ end }}
-    </ol>
-  </section>
-
 </article>
 {{ end }}
