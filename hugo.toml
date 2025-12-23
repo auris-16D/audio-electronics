@@ -1,21 +1,3 @@
-baseURL = "http://localhost:1313/"
-languageCode = "en-gb"
-title = "Audio Electronics Learning Lab"
-
-[params]
-  author = "Nigel Surtees"
-  description = "A structured, audio-focused electronics learning notebook."
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-[taxonomies]
-  tag = "tags"
-
 [menus]
   [[menus.main]]
     name = "Home"
@@ -36,3 +18,13 @@ title = "Audio Electronics Learning Lab"
     name = "Exercises"
     pageRef = "/exercises"
     weight = 4
+
+  [[menus.main]]
+    name = "Glossary"
+    pageRef = "/learning_framework/glossary"
+    weight = 5
+
+  [[menus.main]]
+    name = "Search"
+    pageRef = "/learning_framework/search"
+    weight = 6
