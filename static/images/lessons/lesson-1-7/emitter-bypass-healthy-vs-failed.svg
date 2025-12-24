@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <defs>
+    <style>
+      .w { stroke:#111; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .t { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:16px; fill:#111; }
+      .ts { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:14px; fill:#111; }
+      .tl { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:18px; font-weight:600; fill:#111; }
+      .dash { stroke:#111; stroke-width:2; fill:none; stroke-dasharray:6 6; }
+      .box { stroke:#111; stroke-width:2; fill:#fff; }
+    </style>
+  </defs>
+<text class="tl" x="30" y="40">Emitter bypass capacitor: healthy vs failed (concept)</text>
+<text class="t" x="70" y="90">Healthy Ce</text>
+<rect class="box" x="50" y="110" width="360" height="320" rx="16"/>
+<text class="ts" x="70" y="140">Emitter node</text>
+<circle cx="170" cy="160" r="4" fill="#111"/>
+<path class="w" d="M 170 160 L 160 183.33333333333334 L 180 206.66666666666666 L 160 230.0 L 180 253.33333333333331 L 160 276.66666666666663 L 170 300"/>
+<text class="ts" x="182.0" y="224.0">Re</text>
+<line class="w" x1="170" y1="300" x2="170" y2="310"/>
+<line class="w" x1="154" y1="310" x2="186" y2="310"/>
+<line class="w" x1="158" y1="318" x2="182" y2="318"/>
+<line class="w" x1="162" y1="326" x2="178" y2="326"/>
+<line class="w" x1="280" y1="160" x2="280" y2="170"/>
+<line class="w" x1="264" y1="170" x2="296" y2="170"/>
+<line class="w" x1="264" y1="182" x2="296" y2="182"/>
+<line class="w" x1="280" y1="182" x2="280" y2="300"/>
+<text class="ts" x="302" y="178">Ce</text>
+<line class="w" x1="280" y1="300" x2="280" y2="310"/>
+<line class="w" x1="264" y1="310" x2="296" y2="310"/>
+<line class="w" x1="268" y1="318" x2="292" y2="318"/>
+<line class="w" x1="272" y1="326" x2="288" y2="326"/>
+<text class="ts" x="70" y="360">Expectation:</text>
+<text class="ts" x="70" y="385">Emitter AC swing is small (AC bypassed).</text>
+<text class="t" x="520" y="90">Failed Ce (open / high ESR)</text>
+<rect class="box" x="500" y="110" width="360" height="320" rx="16"/>
+<text class="ts" x="520" y="140">Emitter node</text>
+<circle cx="620" cy="160" r="4" fill="#111"/>
+<path class="w" d="M 620 160 L 610 183.33333333333334 L 630 206.66666666666666 L 610 230.0 L 630 253.33333333333331 L 610 276.66666666666663 L 620 300"/>
+<text class="ts" x="632.0" y="224.0">Re</text>
+<line class="w" x1="620" y1="300" x2="620" y2="310"/>
+<line class="w" x1="604" y1="310" x2="636" y2="310"/>
+<line class="w" x1="608" y1="318" x2="632" y2="318"/>
+<line class="w" x1="612" y1="326" x2="628" y2="326"/>
+<line class="w" x1="730" y1="160" x2="730" y2="170"/>
+<line class="w" x1="714" y1="170" x2="746" y2="170"/>
+<line class="w" x1="714" y1="182" x2="746" y2="182"/>
+<line class="w" x1="730" y1="182" x2="730" y2="300"/>
+<line class="w" x1="710" y1="166" x2="750" y2="188"/>
+<line class="w" x1="750" y1="166" x2="710" y2="188"/>
+<text class="ts" x="752" y="178">Ce</text>
+<line class="w" x1="730" y1="300" x2="730" y2="310"/>
+<line class="w" x1="714" y1="310" x2="746" y2="310"/>
+<line class="w" x1="718" y1="318" x2="742" y2="318"/>
+<line class="w" x1="722" y1="326" x2="738" y2="326"/>
+<text class="ts" x="520" y="360">Expectation:</text>
+<text class="ts" x="520" y="385">Emitter AC swing increases → gain drops.</text>
+<text class="ts" x="30" y="485">Use a scope to compare emitter AC amplitude when a known tone is applied.</text>
+</svg>
