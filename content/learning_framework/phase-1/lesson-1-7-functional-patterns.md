@@ -47,7 +47,7 @@ summary: "Distilled notes from an interactive session: how to recognise a common
 ## Signal path vs DC support (critical mental separation)
 
 {{< lfimg
-  src="lessons/lesson-1-7/signal-path-vs-dc-support-fully-connected.svg"
+  src="images/lessons/lesson-1-7/signal-path-vs-dc-support-fully-connected.svg"
   alt="Signal path vs DC support with correct wiring and transistor action"
   caption="Corrected view: Vin enters via Cin to the base node; the signal is observed at the collector node. DC parts (R1, R2, Re, rails) set operating point; Ce changes AC feedback without changing DC bias."
 >}}
