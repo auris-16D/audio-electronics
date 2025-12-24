@@ -19,8 +19,8 @@ summary: "Distilled notes from an interactive session: how to recognise a common
 
 ### Pattern: Common-emitter voltage amplifier
 
-{{< figure
-  src="/images/lessons/lesson-1-7/common-emitter-nodes-explicit.svg"
+{{< lfimg
+  src="images/lessons/lesson-1-7/common-emitter-nodes-explicit.svg"
   alt="Common-emitter amplifier pattern"
   caption="Common-emitter amplifier pattern (simplified): base input via coupling capacitor, collector output, emitter resistor, and emitter bypass capacitor."
 >}}
@@ -46,8 +46,8 @@ summary: "Distilled notes from an interactive session: how to recognise a common
 
 ## Signal path vs DC support (critical mental separation)
 
-{{< figure
-  src="/images/lessons/lesson-1-7/signal-path-vs-dc-support-fully-connected.svg"
+{{< lfimg
+  src="lessons/lesson-1-7/signal-path-vs-dc-support-fully-connected.svg"
   alt="Signal path vs DC support with correct wiring and transistor action"
   caption="Corrected view: Vin enters via Cin to the base node; the signal is observed at the collector node. DC parts (R1, R2, Re, rails) set operating point; Ce changes AC feedback without changing DC bias."
 >}}
@@ -92,16 +92,16 @@ This single connection cue is more reliable than counting components.
 
 ---
 
-{{< figure
-  src="/images/lessons/lesson-1-7/emitter-bypass-parallel-connection.svg"
+{{< lfimg
+  src="images/lessons/lesson-1-7/emitter-bypass-parallel-connection.svg"
   alt="Emitter bypass capacitor connected in parallel with emitter resistor"
   caption="Emitter bypass capacitor (Ce) is connected between the same two nodes as the emitter resistor (Re). Re sets DC bias; Ce bypasses Re for AC."
 >}}
 
 ## What the bypass capacitor failure looks like
 
-{{< figure
-  src="/images/lessons/lesson-1-7/emitter-bypass-healthy-vs-failed.svg"
+{{< lfimg
+  src="images/lessons/lesson-1-7/emitter-bypass-healthy-vs-failed.svg"
   alt="Emitter bypass capacitor healthy versus failed"
   caption="Emitter bypass capacitor effect: when Ce fails open or high-ESR, emitter AC swing increases and stage gain drops."
 >}}
