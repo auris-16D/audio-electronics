@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <defs>
+    <style>
+      .w { stroke:#111; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .t { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:16px; fill:#111; }
+      .ts { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:14px; fill:#111; }
+      .node { fill:#111; }
+    </style>
+  </defs>
+
+  <text class="t" x="40" y="40">Emitter bypass capacitor (Ce) — correct connection</text>
+
+  <!-- Emitter node -->
+  <circle class="node" cx="400" cy="110" r="5"/>
+  <text class="ts" x="420" y="115">Emitter node</text>
+
+  <!-- Re -->
+  <line class="w" x1="400" y1="115" x2="400" y2="155"/>
+  <path class="w" d="M 400 155 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <line class="w" x1="400" y1="255" x2="400" y2="300"/>
+  <text class="ts" x="415" y="215">Re</text>
+
+  <!-- Ce -->
+  <line class="w" x1="460" y1="115" x2="460" y2="165"/>
+  <line class="w" x1="440" y1="165" x2="480" y2="165"/>
+  <line class="w" x1="440" y1="185" x2="480" y2="185"/>
+  <line class="w" x1="460" y1="185" x2="460" y2="300"/>
+  <text class="ts" x="485" y="180">Ce</text>
+
+  <!-- Ground -->
+  <line class="w" x1="360" y1="300" x2="440" y2="300"/>
+  <line class="w" x1="370" y1="315" x2="430" y2="315"/>
+  <line class="w" x1="385" y1="330" x2="415" y2="330"/>
+  <text class="ts" x="445" y="325">Ground</text>
+
+  <!-- Annotation -->
+  <text class="ts" x="40" y="360">
+    Ce is connected between the SAME TWO POINTS as Re (emitter node and ground).
+    Re sets DC bias; Ce bypasses Re for AC.
+  </text>
+</svg>

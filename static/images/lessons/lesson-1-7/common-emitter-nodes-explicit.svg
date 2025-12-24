@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <defs>
+    <style>
+      .w { stroke:#111; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .t { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:16px; fill:#111; }
+      .ts { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:14px; fill:#111; }
+      .node { fill:#111; }
+    </style>
+  </defs>
+
+  <text class="t" x="40" y="40">Common-emitter amplifier — nodes made explicit</text>
+
+  <!-- Supply -->
+  <text class="ts" x="760" y="90">+V</text>
+  <line class="w" x1="720" y1="100" x2="860" y2="100"/>
+
+  <!-- Collector resistor -->
+  <line class="w" x1="780" y1="100" x2="780" y2="140"/>
+  <path class="w" d="M 780 140 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <line class="w" x1="780" y1="240" x2="780" y2="260"/>
+  <text class="ts" x="795" y="190">Rc</text>
+
+  <!-- Collector node -->
+  <circle class="node" cx="780" cy="260" r="5"/>
+  <text class="ts" x="800" y="265">Collector node (Vout)</text>
+
+  <!-- Transistor -->
+  <line class="w" x1="640" y1="220" x2="640" y2="260"/>
+  <line class="w" x1="600" y1="260" x2="640" y2="260"/>
+  <line class="w" x1="640" y1="260" x2="680" y2="300"/>
+  <text class="ts" x="650" y="210">Q1</text>
+
+  <!-- Emitter node -->
+  <circle class="node" cx="640" cy="300" r="5"/>
+  <text class="ts" x="655" y="305">Emitter node</text>
+
+  <!-- Emitter resistor -->
+  <line class="w" x1="640" y1="305" x2="640" y2="335"/>
+  <path class="w" d="M 640 335 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <line class="w" x1="640" y1="435" x2="640" y2="450"/>
+  <text class="ts" x="655" y="385">Re</text>
+
+  <!-- Ground -->
+  <line class="w" x1="600" y1="450" x2="680" y2="450"/>
+  <line class="w" x1="610" y1="465" x2="670" y2="465"/>
+  <line class="w" x1="625" y1="480" x2="655" y2="480"/>
+  <text class="ts" x="685" y="470">Ground</text>
+
+  <!-- Coupling capacitor -->
+  <text class="ts" x="80" y="260">Vin</text>
+  <line class="w" x1="120" y1="260" x2="200" y2="260"/>
+  <line class="w" x1="200" y1="240" x2="200" y2="280"/>
+  <line class="w" x1="220" y1="240" x2="220" y2="280"/>
+  <line class="w" x1="220" y1="260" x2="600" y2="260"/>
+  <text class="ts" x="185" y="230">Cin</text>
+
+  <!-- Bias divider -->
+  <line class="w" x1="520" y1="100" x2="520" y2="450"/>
+  <path class="w" d="M 520 130 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <path class="w" d="M 520 270 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <text class="ts" x="535" y="190">R1</text>
+  <text class="ts" x="535" y="330">R2</text>
+
+  <circle class="node" cx="520" cy="260" r="5"/>
+  <text class="ts" x="535" y="265">Base node</text>
+</svg>

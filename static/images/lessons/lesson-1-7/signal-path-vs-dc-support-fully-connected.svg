@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+  <defs>
+    <style>
+      .w { stroke:#111; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .sig { stroke:#111; stroke-width:4; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:#111; stroke-width:2; fill:none; stroke-dasharray:7 7; }
+      .t  { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:18px; fill:#111; }
+      .ts { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:14px; fill:#111; }
+      .node { fill:#111; }
+    </style>
+  </defs>
+
+  <text class="t" x="40" y="40">Signal path vs DC support — corrected (shows real connections)</text>
+
+  <!-- +V rail -->
+  <text class="ts" x="840" y="90">+V</text>
+  <line class="w" x1="800" y1="100" x2="930" y2="100"/>
+
+  <!-- Rc (collector resistor) -->
+  <line class="w" x1="865" y1="100" x2="865" y2="130"/>
+  <path class="w" d="M 865 130 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <line class="w" x1="865" y1="230" x2="865" y2="250"/>
+  <text class="ts" x="882" y="185">Rc</text>
+
+  <!-- Collector node -->
+  <circle class="node" cx="865" cy="250" r="5"/>
+  <text class="ts" x="885" y="255">Collector node (Vout)</text>
+
+  <!-- Transistor (simplified NPN symbol) -->
+  <!-- collector lead -->
+  <line class="w" x1="740" y1="210" x2="740" y2="245"/>
+  <!-- base lead -->
+  <line class="w" x1="675" y1="300" x2="705" y2="300"/>
+  <!-- emitter lead -->
+  <line class="w" x1="740" y1="355" x2="740" y2="390"/>
+  <!-- body -->
+  <line class="w" x1="705" y1="275" x2="740" y2="255"/>
+  <line class="w" x1="705" y1="325" x2="740" y2="345"/>
+  <line class="w" x1="740" y1="255" x2="740" y2="345"/>
+  <!-- emitter arrow (NPN, arrow out) -->
+  <path class="w" d="M 740 345 L 755 360"/>
+  <path class="w" d="M 755 360 L 748 360"/>
+  <path class="w" d="M 755 360 L 755 353"/>
+  <text class="ts" x="760" y="295">Q1</text>
+
+  <!-- Wire: collector node to transistor collector -->
+  <line class="w" x1="865" y1="250" x2="740" y2="245"/>
+
+  <!-- Emitter node -->
+  <circle class="node" cx="740" cy="390" r="5"/>
+  <text class="ts" x="760" y="395">Emitter node</text>
+
+  <!-- Re to ground -->
+  <line class="w" x1="740" y1="395" x2="740" y2="420"/>
+  <path class="w" d="M 740 420 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <line class="w" x1="740" y1="520" x2="740" y2="530"/>
+  <text class="ts" x="760" y="475">Re</text>
+  <!-- ground -->
+  <line class="w" x1="700" y1="530" x2="780" y2="530"/>
+  <line class="w" x1="710" y1="545" x2="770" y2="545"/>
+  <line class="w" x1="725" y1="558" x2="755" y2="558"/>
+
+  <!-- Ce bypass (parallel to Re) -->
+  <line class="w" x1="820" y1="395" x2="820" y2="435"/>
+  <line class="w" x1="800" y1="435" x2="840" y2="435"/>
+  <line class="w" x1="800" y1="455" x2="840" y2="455"/>
+  <line class="w" x1="820" y1="455" x2="820" y2="530"/>
+  <text class="ts" x="845" y="450">Ce</text>
+  <!-- connect top of Ce to emitter node -->
+  <line class="w" x1="740" y1="390" x2="820" y2="395"/>
+
+  <!-- Vin and Cin coupling capacitor to base -->
+  <text class="ts" x="60" y="300">Vin</text>
+  <circle class="node" cx="110" cy="300" r="5"/>
+  <line class="w" x1="110" y1="300" x2="200" y2="300"/>
+  <!-- Cin plates -->
+  <line class="w" x1="200" y1="280" x2="200" y2="320"/>
+  <line class="w" x1="222" y1="280" x2="222" y2="320"/>
+  <line class="w" x1="222" y1="300" x2="675" y2="300"/>
+  <text class="ts" x="190" y="270">Cin</text>
+
+  <!-- Base node -->
+  <circle class="node" cx="675" cy="300" r="5"/>
+  <text class="ts" x="585" y="285">Base node</text>
+
+  <!-- Bias divider (R1/R2) to base -->
+  <line class="w" x1="580" y1="100" x2="580" y2="530"/>
+  <path class="w" d="M 580 130 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <path class="w" d="M 580 330 l -10 10 l 20 20 l -20 20 l 20 20 l -10 10"/>
+  <text class="ts" x="600" y="190">R1</text>
+  <text class="ts" x="600" y="390">R2</text>
+  <!-- connect divider midpoint to base node -->
+  <line class="w" x1="580" y1="300" x2="675" y2="300"/>
+  <text class="ts" x="520" y="95">Bias divider</text>
+
+  <!-- DC ground already at bottom; show label -->
+  <text class="ts" x="610" y="545">Ground / reference</text>
+
+  <!-- Highlight: AC signal path (thick) -->
+  <!-- Vin to Cin to base -->
+  <line class="sig" x1="110" y1="300" x2="200" y2="300"/>
+  <line class="sig" x1="222" y1="300" x2="675" y2="300"/>
+  <!-- Base to collector effect (no wire; show curved arrow to indicate transconductance action) -->
+  <path class="sig" d="M 700 300 C 730 285, 760 265, 790 255"/>
+  <text class="ts" x="725" y="275">signal controls</text>
+
+  <!-- Collector node to Vout label (already) -->
+  <circle class="node" cx="865" cy="250" r="5"/>
+
+  <!-- DC support region box -->
+  <rect class="dash" x="520" y="70" width="420" height="490" rx="16"/>
+  <text class="ts" x="530" y="65">DC support and operating point (R1, R2, Re, +V, Ground)</text>
+
+  <!-- AC region box -->
+  <rect class="dash" x="60" y="235" width="880" height="120" rx="16"/>
+  <text class="ts" x="70" y="230">AC signal path (Vin → Cin → base; output observed at collector node)</text>
+
+  <text class="ts" x="40" y="510">
+    Note: the thick path shows where the AC information enters and where it is observed.
+    DC parts set node voltages; Ce changes AC feedback without changing DC bias.
+  </text>
+</svg>
