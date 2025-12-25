@@ -80,12 +80,12 @@ summary: "Pre/post recap bench measurement sheet for the RM-5010 PSU with transf
 
 | Measurement | Post A (colour) | Post B (colour) | Pre (V AC) | Post (V AC) | Notes |
 |------------|------------------|-----------------|-----------:|------------:|-------|
-| Main full winding (primary benchmark) | AC1 (pink) | AC2 (red) | 42.1 | | Use this as “main secondary (full)” |
-| Segment | AC2 (red) | AC5 (green) | 8.94 | | Low-voltage tap segment |
-| Segment | AC4 (yellow) | AC5 (green) | 1.53 | | Very small tap segment (likely for trimming/bias/aux feed) |
-| Segment | AC3 (yellow) | AC4 (yellow) | 21.4 | | |
-| Segment | AC1 (pink) | AC3 (yellow) | 10.52 | | |
-| Cross-check | AC1 (pink) | AC5 (green) | 33.11 | | Should equal AC1–AC3 + AC3–AC4 + AC4–AC5 |
+| Main full winding (primary benchmark) | AC1 (pink) | AC2 (red) | 42.1 | 43.2 | Use this as “main secondary (full)” |
+| Segment | AC2 (red) | AC5 (green) | 8.94 | 9.18 | Low-voltage tap segment |
+| Segment | AC4 (yellow) | AC5 (green) | 1.53 | 1.56 | Very small tap segment (likely for trimming/bias/aux feed) |
+| Segment | AC3 (yellow) | AC4 (yellow) | 21.4 | 21.68| |
+| Segment | AC1 (pink) | AC3 (yellow) | 10.52 | 10.81| |
+| Cross-check | AC1 (pink) | AC5 (green) | 33.11 | 34.07| Should equal AC1–AC3 + AC3–AC4 + AC4–AC5 |
 
 > Repeat post-recap with the same DBT setup for apples-to-apples comparison.
 > Optionally add a second pass on direct mains once DBT behaviour is normal.
