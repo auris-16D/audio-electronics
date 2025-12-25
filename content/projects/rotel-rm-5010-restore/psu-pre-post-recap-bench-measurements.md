@@ -72,7 +72,7 @@ summary: "Pre/post recap bench measurement sheet for the RM-5010 PSU with transf
 
 | Winding | Post A (colour) | Post B (colour) | Pre (V AC) | Post (V AC) | Notes |
 |--------|------------------|-----------------|-----------:|------------:|-------|
-| Aux secondary | AC7 (white) | AC6 (blue) | 102.0 | | High-voltage, low-current secondary plausible given 50–90 Ω DCR |
+| Aux secondary | AC7 (white) | AC6 (blue) | 102.0 | 104.4 | High-voltage, low-current secondary plausible given 50–90 Ω DCR |
 
 ### B) Main secondary — use full winding + key segments (benchmarks)
 
@@ -138,4 +138,21 @@ summary: "Pre/post recap bench measurement sheet for the RM-5010 PSU with transf
 - Audible hum change:
 - Thermal change (rectifiers, cement resistors):
 - Notes / conclusions:
+
+## Post-Recap Analysis (Summary)
+
+Measurements were taken under the same conditions pre- and post-recap (DBT inline: 100 W + 40 W in parallel, cold start, Fluke 29), allowing a valid comparison.
+
+- **Transformer – auxiliary winding (AC7–AC6):** increased from ~102 V AC to **104.4 V AC** post-recap.  
+- **Transformer – main winding (AC1–AC2):** increased from ~42.1 V AC to ~43.2 V AC; all tap voltages increased proportionally and remain internally consistent.
+
+*Interpretation:* AC increases closely track the slightly higher mains voltage post-recap; transformer behaviour is stable and unchanged.
+
+- **DC rails:** both +Raw and −Raw increased by ~0.5 V post-recap and remain very well balanced (|+V| ≈ |−V|).
+- **Ripple:** reduced from ~30 mV to ~25 mV on both main reservoir capacitors (measured on DBT).
+- **Distributed DC outputs:** small voltage increase consistent with raw rails; no imbalance observed.
+
+**Conclusion:**  
+The PSU recap was successful. Ripple reduction confirms improved smoothing, rail symmetry is preserved, and all voltage changes are consistent with normal mains variation rather than any fault.
+
 
