@@ -18,13 +18,19 @@
     name = "Exercises"
     pageRef = "/exercises"
     weight = 4
+  
+  [[menus.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 5
+
 
   [[menus.main]]
     name = "Glossary"
     pageRef = "/learning_framework/glossary"
-    weight = 5
+    weight = 6
 
   [[menus.main]]
     name = "Search"
     pageRef = "/learning_framework/search"
-    weight = 6
+    weight = 7

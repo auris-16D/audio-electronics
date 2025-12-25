@@ -12,9 +12,6 @@ tags:
 date: 2025-12-25
 status: draft
 summary: "Pre/post recap bench measurement sheet for the RM-5010 PSU with transformer tap mapping, DC rail and ripple benchmarks, and load checks. Pre-recap transformer AC values captured on DBT (100W+40W in parallel)."
----
-
-# RM-5010 PSU — Pre / Post Recap Bench Measurements
 
 ---
 
@@ -141,3 +138,4 @@ summary: "Pre/post recap bench measurement sheet for the RM-5010 PSU with transf
 - Audible hum change:
 - Thermal change (rectifiers, cement resistors):
 - Notes / conclusions:
+

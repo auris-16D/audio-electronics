@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <main class="content">
+    <header>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+    </header>
+
+    {{ .Content }}
+
+    {{ $sections := .Sections }}
+    {{ $pages := .RegularPages }}
+
+    {{ if or $sections $pages }}
+      {{ if $sections }}
+        <ul>
+          {{ range $sections.ByTitle }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.summary }} — {{ . }}{{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+
+      {{ if $pages }}
+        <h2>Project Pages</h2>
+        <ul>
+          {{ range $pages.ByTitle }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.summary }} — {{ . }}{{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ else }}
+      <p>No projects found.</p>
+    {{ end }}
+  </main>
+{{ end }}
