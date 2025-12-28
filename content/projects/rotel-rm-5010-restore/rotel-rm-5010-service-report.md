@@ -14,7 +14,7 @@ status: complete
 summary: "Electrical and mechanical service report for a Rotel RM-5010 receiver, including tonearm rebuild, LED conversion, recap, and auxiliary input modification."
 ---
 
-# Rotel RM-5010 – Service Report
+<!-- # Rotel RM-5010 – Service Report -->
 
 **Scope:** Electrical & mechanical restoration  
 **Reported fault:** Right channel audio – no sound
