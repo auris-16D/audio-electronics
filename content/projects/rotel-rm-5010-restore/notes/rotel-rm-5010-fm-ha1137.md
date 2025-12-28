@@ -25,14 +25,14 @@ https://datasheet4u.com/pdf-down/H/A/1/HA1137W_Hitachi.pdf
 
 ### Block diagram
 
-{{< figure
+{{< lfimg
     src="/images/technical-notes/rm-5010/fm/ha1137/ha1137-block-diagram.png"
     caption="HA1137 functional block diagram"
     width="1000"
 >}}
 
 
-{{< figure
+{{< lfimg
     src="/images/technical-notes/rm-5010/fm/ha1137/ha1137-internal-circuit-schematic.png"
     caption="HA1137 circuit schematic"
     width="1000"
@@ -40,7 +40,7 @@ https://datasheet4u.com/pdf-down/H/A/1/HA1137W_Hitachi.pdf
 
 ### Test circuit
 
-{{< figure
+{{< lfimg
     src="/images/technical-notes/rm-5010/fm/ha1137/ha1137-test-circuit.png"
     caption="HA1137 test circuit"
     width="1000"
