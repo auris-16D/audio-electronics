@@ -27,7 +27,7 @@ https://datasheet4u.com/pdf-down/H/A/1/HA1156W_HitachiSemiconductor.pdf
 ### Functional block diagram
 
 {{< lfimg
-    src="/images/technical-notes/rm-5010/fm/ha1156/ha1156-functional-block.png"
+    src="/audio-electronics/images/technical-notes/rm-5010/fm/ha1156/ha1156-functional-block.png"
     caption="HA1156 functional block diagram"
     width="1000"
 >}}
@@ -35,7 +35,7 @@ https://datasheet4u.com/pdf-down/H/A/1/HA1156W_HitachiSemiconductor.pdf
 ### Circuit schematic and typical external parts
 
 {{< lfimg
-    src="/images/technical-notes/rm-5010/fm/ha1156/ha1156-internal-schematic-typical-parts.png"
+    src="/audio-electronics/images/technical-notes/rm-5010/fm/ha1156/ha1156-internal-schematic-typical-parts.png"
     caption="HA1156 circuit schematic and typical external parts"
     width="1000"
 >}}
@@ -43,7 +43,7 @@ https://datasheet4u.com/pdf-down/H/A/1/HA1156W_HitachiSemiconductor.pdf
 ### Test circuit
 
 {{< lfimg
-    src="/images/technical-notes/rm-5010/fm/ha1156/ha1156-test-circuit.png"
+    src="/audio-electronics/images/technical-notes/rm-5010/fm/ha1156/ha1156-test-circuit.png"
     caption="HA1156 test circuit"
     width="1000"
 >}}

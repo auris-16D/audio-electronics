@@ -18,7 +18,7 @@ summary: "uPC30C reference page built from the pin-connection diagram and spec t
 ### Spec table (operating conditions / characteristics)
 
 {{< lfimg
-    src="/images/technical-notes/rm-5010/fm/upc30c/upc30c-spec-table.png"
+    src="/audio-electronics/images/technical-notes/rm-5010/fm/upc30c/upc30c-spec-table.png"
     caption="uPC30C spec table"
     width="1000"
 >}}
@@ -27,7 +27,7 @@ summary: "uPC30C reference page built from the pin-connection diagram and spec t
 ### Pin connection diagram
 
 {{< lfimg
-    src="/images/technical-notes/rm-5010/fm/upc30c/upc30c-pin-connection-diagram.png"
+    src="/audio-electronics/images/technical-notes/rm-5010/fm/upc30c/upc30c-pin-connection-diagram.png"
     caption="uPC30C pin connection diagram"
     width="1000"
 >}}
