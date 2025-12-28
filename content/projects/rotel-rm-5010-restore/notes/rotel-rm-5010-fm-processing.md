@@ -21,15 +21,15 @@ This set of pages exists because there is **no readily available RM-5010 service
 
 This overview page links to the three per-IC deep dives:
 
-- [HA1137 — IF / detector / AF out + mute interface](/notes/rotel-rm-5010-fm-ha1137/)
-- [HA1156 — stereo decoder (pilot/timing, L/R decode, stereo lamp)](/notes/rotel-rm-5010-fm-ha1156/)
-- [uPC30C — control / muting logic interface](/notes/rotel-rm-5010-fm-upc30c/)
+- [HA1137 — IF / detector / AF out + mute interface](/projects/rotel-rm-5010-restore/notes/rotel-rm-5010-fm-ha1137/)
+- [HA1156 — stereo decoder (pilot/timing, L/R decode, stereo lamp)](/projects/rotel-rm-5010-restore/notes/rotel-rm-5010-fm-ha1156/)
+- [uPC30C — control / muting logic interface](/projects/rotel-rm-5010-restore/notes/rotel-rm-5010-fm-upc30c/)
 
 (If your Hugo permalinks differ, update the links after generation.)
 
 ---
 
-## Working block model (sufficient for diagnostics)
+## Working block model
 
 FM IF / discriminator output (composite MPX)
   |
