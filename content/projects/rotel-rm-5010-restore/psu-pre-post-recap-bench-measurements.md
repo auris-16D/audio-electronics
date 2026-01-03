@@ -10,6 +10,7 @@ tags:
   - DBT
   - Recap
 date: 2025-12-25
+weight: 80
 status: draft
 summary: "Pre/post recap bench measurement sheet for the RM-5010 PSU with transformer tap mapping, DC rail and ripple benchmarks, and load checks. Pre-recap transformer AC values captured on DBT (100W+40W in parallel)."
 

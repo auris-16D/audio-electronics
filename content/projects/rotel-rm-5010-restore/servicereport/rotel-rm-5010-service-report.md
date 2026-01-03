@@ -10,6 +10,7 @@ tags:
   - service-report
   - vintage-audio
 date: 2025-12-13
+weight: 10
 status: complete
 summary: "Electrical and mechanical service report for a Rotel RM-5010 receiver, including tonearm rebuild, LED conversion, recap, and auxiliary input modification."
 ---
