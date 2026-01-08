@@ -1,0 +1,60 @@
+{{/*
+  Breadcrumbs partial
+  Renders: Home › Section › ... › Current Page
+  Usage: include in templates (e.g. single.html) as
+    {{ partial "breadcrumbs.html" . }}
+*/}}
+{{ $root := . }}
+{{ if not $root.IsHome }}
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol>
+    <li class="crumb">
+      <a href="{{ $root.Site.Home.RelPermalink }}">Home</a>
+    </li>
+
+    {{ $ancestors := slice }}
+    {{/* Determine a sensible starting section/node for the breadcrumb ancestors. */}}
+    {{ $sectionPage := "" }}
+    {{ if eq $root.Kind "section" }}
+      {{ $sectionPage = $root }}
+    {{ else if $root.CurrentSection }}
+      {{ $sectionPage = $root.CurrentSection }}
+    {{ else if $root.Section }}
+      {{ $secPath := printf "/%s/" $root.Section }}
+      {{ with site.GetPage $secPath }}
+        {{ $sectionPage = . }}
+      {{ end }}
+    {{ end }}
+
+    {{ if $sectionPage }}
+      {{/* Walk up parents until home or no parent; collect top-down. */}}
+      {{ $nodes := slice $sectionPage }}
+      {{ $p := $sectionPage.Parent }}
+      {{ range seq 1 20 }}
+        {{ if not $p }}{{ break }}{{ end }}
+        {{ if not $p.IsHome }}
+          {{ $nodes = $nodes | append $p }}
+        {{ end }}
+        {{ $p = $p.Parent }}
+      {{ end }}
+      {{/* Reverse nodes so top -> leaf */}}
+      {{ $count := len $nodes }}
+      {{ range $i := seq 1 $count }}
+        {{ $idx := sub $count $i }}
+        {{ $n := index $nodes $idx }}
+        {{ if not $n.IsHome }}
+          {{ $ancestors = $ancestors | append $n }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ range $ancestors }}
+      {{ if ne .RelPermalink $root.RelPermalink }}
+        <li class="crumb"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    {{ end }}
+
+    <li class="crumb" aria-current="page">{{ $root.Title }}</li>
+  </ol>
+</nav>
+{{ end }}

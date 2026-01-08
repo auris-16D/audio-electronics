@@ -1,19 +1,9 @@
 {{ define "main" }}
 <article class="lesson">
+  {{ partial "breadcrumbs.html" . }}
+  {{ partial "hero.html" . }}
 
-{{ if not .IsHome }}
-  <h1>{{ .Title }}</h1>
-{{ end }}
-
-{{ with .Params.phase }}
-<p><strong>Phase:</strong> {{ . }}</p>
-{{ end }}
-
-{{ with .Params.difficulty }}
-<p><strong>Difficulty:</strong> {{ . }}</p>
-{{ end }}
-
-{{ .Content }}
+  {{ .Content }}
 
 </article>
 {{ end }}

@@ -1,5 +1,7 @@
 {{ define "main" }}
   <main class="content">
+    {{ partial "breadcrumbs.html" . }}
+
     <header>
       <h1>{{ .Title }}</h1>
       {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}

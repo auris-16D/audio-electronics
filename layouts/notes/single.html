@@ -1,16 +1,7 @@
 {{ define "main" }}
 <article>
-  {{ if not .IsHome }}
-  <h1>{{ .Title }}</h1>
-{{ end }}
-  <p><small>{{ .Date.Format "2006-01-02" }}</small></p>
-  {{ with .Params.tags }}
-    <p>
-      {{ range . }}
-        <span style="padding:0 .4rem; border:1px solid #ddd; border-radius:999px; margin-right:.25rem;">{{ . }}</span>
-      {{ end }}
-    </p>
-  {{ end }}
+  {{ partial "breadcrumbs.html" . }}
+  {{ partial "hero.html" . }}
 
   {{ .Content }}
 </article>

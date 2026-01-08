@@ -1,0 +1,34 @@
+{{/*
+  Hero / meta partial
+  Renders title, summary, metadata (phase, difficulty, tags, date) and prev/next links.
+  Usage: {{ partial "hero.html" . }}
+*/}}
+<header class="hero">
+  <div class="hero__inner">
+    {{ if not .IsHome }}
+      <h1 class="hero__title">{{ .Title }}</h1>
+    {{ end }}
+
+    {{ with or .Params.summary .Summary }}
+      <p class="hero__summary">{{ . }}</p>
+    {{ end }}
+
+    <div class="hero__meta">
+      {{ with .Params.phase }}<span class="meta-item">Phase {{ . }}</span>{{ end }}
+      {{ with .Params.difficulty }}<span class="meta-item">{{ . | title }}</span>{{ end }}
+      {{ with .Date }}<span class="meta-item">{{ .Format "2006-01-02" }}</span>{{ end }}
+      {{ with .Params.tags }}
+        <span class="meta-item meta-tags">
+          {{ range $i, $t := . }}
+            <a class="tag" href="{{ "/tags/" | relURL }}{{ $t | urlize }}">{{ $t }}</a>{{ if lt (add $i 1) (len .) }}, {{ end }}
+          {{ end }}
+        </span>
+      {{ end }}
+    </div>
+
+    <nav class="hero__nav" aria-label="Article navigation">
+      {{ with .Prev }}<a class="hero-prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+      {{ with .Next }}<a class="hero-next" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+    </nav>
+  </div>
+</header>

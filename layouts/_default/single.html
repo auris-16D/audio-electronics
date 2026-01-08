@@ -1,8 +1,9 @@
 {{ define "main" }}
 <article>
-  {{ if not .IsHome }}
-  <h1>{{ .Title }}</h1>
-{{ end }}
+  {{ partial "breadcrumbs.html" . }}
+
+  {{ partial "hero.html" . }}
+
   {{ .Content }}
 </article>
 {{ end }}

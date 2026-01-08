@@ -207,4 +207,100 @@
     }
   }
   
+  /* Breadcrumbs */
+  .breadcrumbs {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .breadcrumbs ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .breadcrumbs .crumb a {
+    color: #5b2d8b;
+    text-decoration: none;
+  }
+
+  .breadcrumbs .crumb + .crumb::before {
+    content: '→';
+    margin: 0 0.5rem;
+    color: #888;
+  }
+
+  .breadcrumbs .crumb[aria-current="page"] {
+    color: #222;
+    font-weight: 600;
+  }
+
+  /* Mobile: collapse long breadcrumb trails visually but keep them accessible */
+  @media (max-width: 600px) {
+    .breadcrumbs ol {
+      gap: 0.25rem;
+    }
+
+    .breadcrumbs .crumb:not(:first-child):not(:last-child) {
+      /* visually hide but keep for screen readers */
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0,0,0,0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    .breadcrumbs .crumb:first-child::after {
+      content: ' …';
+      margin-left: 0.25rem;
+      color: #888;
+    }
+  }
+
+  /* Hero / meta */
+  .hero {
+    padding: 0.75rem 0 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+  }
+
+  .hero__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.6rem;
+  }
+
+  .hero__summary {
+    margin: 0 0 0.75rem 0;
+    color: #444;
+  }
+
+  .hero__meta {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero__meta .meta-item { padding-right: 0.4rem; }
+
+  .hero__meta .tag { background: #f3eef9; color: #5b2d8b; padding: 0.15rem 0.4rem; border-radius: 999px; margin-right: 0.25rem; text-decoration: none; }
+
+  .hero__nav { display:flex; justify-content: space-between; gap: 1rem; }
+
+  .hero-prev, .hero-next { color: #5b2d8b; text-decoration: none; font-size: 0.95rem; }
+
+
+  
   
