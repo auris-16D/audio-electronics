@@ -8,16 +8,6 @@
     name = "Learning Framework"
     pageRef = "/learning_framework"
     weight = 2
-
-  [[menus.main]]
-    name = "Technical Notes"
-    pageRef = "/notes"
-    weight = 3
-
-  [[menus.main]]
-    name = "Exercises"
-    pageRef = "/exercises"
-    weight = 4
   
   [[menus.main]]
     name = "Projects"
@@ -34,3 +24,8 @@
     name = "Search"
     pageRef = "/learning_framework/search"
     weight = 7
+
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 10
