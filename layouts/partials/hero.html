@@ -17,13 +17,13 @@
       {{ with .Params.phase }}<span class="meta-item">Phase {{ . }}</span>{{ end }}
       {{ with .Params.difficulty }}<span class="meta-item">{{ . | title }}</span>{{ end }}
       {{ with .Date }}<span class="meta-item">{{ .Format "2006-01-02" }}</span>{{ end }}
-      {{ with .Params.tags }}
+      <!-- {{ with .Params.tags }}
         <span class="meta-item meta-tags">
           {{ range $i, $t := . }}
             <a class="tag" href="{{ "/tags/" | relURL }}{{ $t | urlize }}">{{ $t }}</a>{{ if lt (add $i 1) (len .) }}, {{ end }}
           {{ end }}
         </span>
-      {{ end }}
+      {{ end }} -->
     </div>
 
     <nav class="hero__nav" aria-label="Article navigation">
