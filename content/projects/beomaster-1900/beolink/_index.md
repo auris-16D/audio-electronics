@@ -14,6 +14,7 @@ tags:
   - kicad
 date: 2026-01-07
 status: "draft"
+weight: 100
 summary: "Implement a BeoLink-style line output using 8-pin DIN sockets with protection-aware 5V trigger logic, using relays for silent switching and a KiCad-defined schematic ready for PCB manufacture."
 ---
 
