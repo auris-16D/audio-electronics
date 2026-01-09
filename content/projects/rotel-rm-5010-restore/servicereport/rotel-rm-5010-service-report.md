@@ -40,6 +40,7 @@ summary: "Electrical and mechanical service report for a Rotel RM-5010 receiver,
 - Balance potentiometer: erratic behaviour
 - Tape deck VU meters: pinned/straining to maximum with no audio input
 - Tape deck: no audio output
+- Static pops, crackles and hissing audible at random intervals on any source selection.
 
 ---
 
