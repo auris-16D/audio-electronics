@@ -3,7 +3,6 @@ title: "Rotel RM-5010 — AUX Input Implementation"
 date: 2025-12-20
 draft: false
 weight: 70
-tags: ["rotel", "rm-5010", "aux", "line-in", "audio", "grounding", "wiring"]
 summary: "Add a stereo AUX input using an isolated jack, coupling capacitors, optional RF resistors, and correct single-point signal grounding."
 ---
 

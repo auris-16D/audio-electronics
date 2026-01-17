@@ -2,16 +2,6 @@
 title: "Beomaster 1900 — BeoLink Output with 5V Trigger"
 section: "Projects"
 category: "Beomaster 1900"
-tags:
-  - beomaster-1900
-  - bang-olufsen
-  - modification
-  - beolink
-  - beolab
-  - preamp-out
-  - trigger
-  - relay
-  - kicad
 date: 2026-01-07
 status: "draft"
 weight: 100

@@ -3,7 +3,6 @@ title: "Rotel RM-5010 — LED Dial / Panel Lighting Conversion"
 date: 2025-12-20
 draft: false
 weight: 80
-tags: ["rotel", "rm-5010", "led", "lighting", "pwm", "rectifier", "capacitors"]
 summary: "Replacing 12 VAC dial lamps with LED assemblies using bridge rectification, smoothing capacitors, and PWM dimming."
 ---
 

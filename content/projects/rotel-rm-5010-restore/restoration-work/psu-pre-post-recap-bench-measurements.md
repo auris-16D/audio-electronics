@@ -2,13 +2,6 @@
 title: "Rotel RM-5010 PSU Pre/Post Recap Bench Measurements"
 section: "Technical Notes"
 category: "Audio Electronics"
-tags:
-  - Rotel RM-5010
-  - Power Supply
-  - Bench Measurements
-  - Transformer
-  - DBT
-  - Recap
 date: 2025-12-25
 weight: 80
 status: draft

@@ -3,6 +3,13 @@
 {{- $cap := .Get "caption" | default "" -}}
 
 <figure>
-  <img src="{{ $src | relURL }}" alt="{{ $alt }}">
+  {{- $link := .Get "link" -}}
+  {{- if $link -}}
+    <a href="{{ $link | relURL }}">
+      <img src="{{ $src | relURL }}" alt="{{ $alt }}">
+    </a>
+  {{- else -}}
+    <img src="{{ $src | relURL }}" alt="{{ $alt }}">
+  {{- end -}}
   {{- with $cap -}}<figcaption>{{ . }}</figcaption>{{- end -}}
 </figure>

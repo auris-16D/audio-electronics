@@ -9,8 +9,14 @@
       <h1 class="hero__title">{{ .Title }}</h1>
     {{ end }}
 
-    {{ with or .Params.summary .Summary }}
-      <p class="hero__summary">{{ . }}</p>
+    {{/* Render a sanitized summary: prefer front-matter `summary`, otherwise use auto-generated `.Summary` but strip any <img> tags to avoid duplicate images. */}}
+    {{ $rawSummary := .Params.summary }}
+    {{ if not $rawSummary }}
+      {{ $rawSummary = .Summary }}
+    {{ end }}
+    {{ if $rawSummary }}
+      {{ $clean := replaceRE `(?is)<img[\s\S]*?>` "" $rawSummary }}
+      <p class="hero__summary">{{ $clean | safeHTML }}</p>
     {{ end }}
 
     <div class="hero__meta">

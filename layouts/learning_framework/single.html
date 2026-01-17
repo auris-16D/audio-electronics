@@ -1,7 +1,21 @@
 {{ define "main" }}
 <article class="lesson">
   {{ partial "breadcrumbs.html" . }}
-  {{ partial "hero.html" . }}
+
+  {{ if not .IsHome }}
+    <h1>{{ .Title }}</h1>
+    {{ $raw := "" }}
+    {{ if isset .Params "summary" }}
+      {{ $raw = .Params.summary }}
+    {{ else }}
+      {{ $raw = .Summary }}
+    {{ end }}
+    {{ if $raw }}
+      {{ $noFigures := replaceRE `(?is)<figure[\s\S]*?<\/figure>` "" $raw }}
+      {{ $clean := replaceRE `(?is)<img[\s\S]*?>` "" $noFigures }}
+      <p class="page-summary">{{ $clean | safeHTML }}</p>
+    {{ end }}
+  {{ end }}
 
   {{ .Content }}
 
