@@ -2,13 +2,28 @@
 <script src='{{ "pagefind/pagefind-ui.js" | relURL }}'></script>
 
 <div id="search"></div>
+<div id="search-fallback" style="display:none; padding:.75rem; border:1px dashed #ddd; background:#fff8; color:#333; font-size:0.95rem;">
+  Search UI not available locally. To enable search during local development, run:
+  <pre style="background:#f6f6f6; padding:.5rem; border-radius:4px; margin:.5rem 0;">hugo -D
+npx -y pagefind --site public
+# then either serve from public or copy public/pagefind to static/pagefind</pre>
+  Or deploy to GitHub Actions where Pagefind runs automatically during build.
+</div>
 
 <script>
   window.addEventListener("DOMContentLoaded", () => {
-    new PagefindUI({
-      element: "#search",
-      showSubResults: true,
-      bundlePath: '{{ "pagefind/" | relURL }}'
-    });
+    try {
+      if (typeof PagefindUI === 'undefined') throw new Error('PagefindUI missing');
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        bundlePath: '{{ "pagefind/" | relURL }}'
+      });
+    } catch (e) {
+      // show fallback instructions when Pagefind assets aren't present
+      const el = document.getElementById('search-fallback');
+      if (el) el.style.display = 'block';
+      console.warn('Pagefind UI not initialized:', e);
+    }
   });
 </script>
