@@ -302,5 +302,54 @@
   .hero-prev, .hero-next { color: #5b2d8b; text-decoration: none; font-size: 0.95rem; }
 
 
-  
+.thumb-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+/* Force each figure to behave like a small tile, even if the theme sets figure{width:100%} */
+.thumb-row > figure {
+  margin: 0;
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+}
+
+/* Optional: if some CSS is forcing figures to be block-level 100% width */
+.thumb-row > figure {
+  display: inline-flex;
+}
+
+/* Keep images consistent */
+.thumb-row img {
+  display: block;
+}
+
+.thumb-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.thumb-row > figure {
+  width: 100px !important;      /* lock tile width */
+  max-width: 100px !important;
+  flex: 0 0 100px !important;   /* don't grow, don't shrink */
+  margin: 0 !important;
+}
+
+.thumb-row > figure img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;            /* optional: keeps thumbnails neat */
+  display: block;
+}
+
+.thumb-row {
+  margin: 0 0 1.25rem 0 !important;  /* space after each row */
+  padding: 0 !important;             /* keep deterministic */
+}
   
