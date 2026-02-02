@@ -8,46 +8,46 @@ summary: ""
 ---
 
 {{< figure
-    src="/images/projects/beomaster-1900/pcb-beolink/schematic-1.png"
+    src="images/projects/beomaster-1900/pcb-beolink/schematic-1.png"
     caption="KiCad PCB image 1 (click to view full size)"
-    link="/images/projects/beomaster-1900/pcb-beolink/schematic-1.png"
+    link="images/projects/beomaster-1900/pcb-beolink/schematic-1.png"
     width="500"
 >}}
 
 
 {{< figure
-    src="/images/projects/beomaster-1900/pcb-beolink/pcb-layers-1.png"
+    src="images/projects/beomaster-1900/pcb-beolink/pcb-layers-1.png"
     caption="KiCad PCB image 2 (click to view full size)"
-    link="/images/projects/beomaster-1900/pcb-beolink/pcb-layers-1.png"
+    link="images/projects/beomaster-1900/pcb-beolink/pcb-layers-1.png"
     width="500"
 >}}
 
 {{< figure
-    src="/images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-1.png"
+    src="images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-1.png"
     caption="KiCad PCB image 3 (click to view full size)"
-    link="/images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-1.png"
+    link="images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-1.png"
     width="500"
 >}}
 
 
 {{< figure
-    src="/images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-2.png"
+    src="images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-2.png"
     caption="KiCad PCB image 4 (click to view full size)"
-    link="/images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-2.png"
+    link="images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-2.png"
     width="500"
 >}}
 
 {{< figure
-    src="/images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB.png"
+    src="images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB.png"
     caption="KiCad PCB image 5 (click to view full size)"
-    link="/images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB.png"
+    link="images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB.png"
     width="500"
 >}}
 
 {{< figure
-    src="/images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-3.png"
+    src="images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-3.png"
     caption="KiCad PCB image 6 (click to view full size)"
-    link="/images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-3.png"
+    link="images/projects/beomaster-1900/pcb-beolink/Beomaster-1900-Beolink-PCB-3.png"
     width="500"
 >}}
 
