@@ -1,0 +1,16 @@
+{{- $src := .Get "src" -}}
+{{- $link := .Get "link" | default $src -}}
+{{- $w := .Get "width" | default "100" -}}
+{{- $h := .Get "height" | default "100" -}}
+
+<figure>
+  <a href="{{ $link | relURL }}">
+    <img
+      src="{{ $src | relURL }}"
+      width="{{ $w }}"
+      height="{{ $h }}"
+      loading="lazy"
+      decoding="async"
+    >
+  </a>
+</figure>

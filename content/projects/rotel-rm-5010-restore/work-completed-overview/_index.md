@@ -34,20 +34,20 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
 - Removable (velcro'd) holder for Spare fuses and full set warm white LEDs mounted on rear of cabinet. 2 x 3.15 amp speaker fuses and 1 x 0.5 amp fuse for LED circuit. 8 LEDs.
 
 {{< thumb-row >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/cab-repair.png"
     link="images/projects/rotel-rm-5010-restore/overview/cab-repair.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/spare-fuse-holder.png"
     link="images/projects/rotel-rm-5010-restore/overview/spare-fuse-holder.png"
     width="100"
     height="100"
 >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/spares-cl-up.png"
     link="images/projects/rotel-rm-5010-restore/overview/spares-cl-up.png"
     width="100"
@@ -78,46 +78,46 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
 - Adjust 33 & 45 to correct speeds using built in strobe.
 
 {{< thumb-row >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/stylus-1.png"
     link="images/projects/rotel-rm-5010-restore/overview/stylus-1.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/head-1.png"
     link="images/projects/rotel-rm-5010-restore/overview/head-1.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/tonearm-lock.png"
     link="images/projects/rotel-rm-5010-restore/overview/tonearm-lock.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/arm-base-1.png"
     link="images/projects/rotel-rm-5010-restore/overview/arm-base-1.png"
     width="100"
     height="100"
 >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/arm-base-2.png"
     link="images/projects/rotel-rm-5010-restore/overview/arm-base-2.png"
     width="100"
     height="100"
 >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/arm-base-3.png"
     link="images/projects/rotel-rm-5010-restore/overview/arm-base-3.png"
     width="100"
     height="100"
 >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/arm-base-4.png"
     link="images/projects/rotel-rm-5010-restore/overview/arm-base-4.png"
     width="100"
@@ -127,14 +127,14 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
 
 {{< thumb-row >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/baerwald.png"
     link="images/projects/rotel-rm-5010-restore/overview/baerwald.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/speed-calibration.png"
     link="images/projects/rotel-rm-5010-restore/overview/speed-calibration.png"
     width="100"
@@ -195,42 +195,42 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
 
 
 {{< thumb-row >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-pcb-1.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-pcb-1.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-pcb-2.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-pcb-2.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-tuner-gauge.png"
     link="images/projects/rotel-rm-5010-restore/overview/lled-tuner-gauge.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-insitu-1.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-insitu-1.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-dimming-pcb.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-dimming-pcb.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-pwr-aux-in-cl-up.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-pwr-aux-in-cl-up.png"
     width="100"
@@ -241,27 +241,27 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
 {{< /thumb-row >}}
 
 {{< thumb-row >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-final-1.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-final-1.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-final-2.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-final-2.png"
     width="100"
     height="100"
 >}}
 
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-tuner.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-tuner.png"
     width="100"
     height="100"
 >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-vu-meters.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-vu-meters.png"
     width="100"
@@ -283,25 +283,25 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
 - Labeled selector with Aux.
 
 {{< thumb-row >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-pwr-aux-in-pcbs.png"
     link="images/projects/rotel-rm-5010-restore/overview/led-pwr-aux-in-pcbs.png"
     width="100"
     height="100"
 >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/rear-additions.png"
     link="images/projects/rotel-rm-5010-restore/overview/rear-additions.png"
     width="100"
     height="100"
 >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/Aux-in-LED-controls-cl-up.png"
     link="images/projects/rotel-rm-5010-restore/overview/Aux-in-LED-controls-cl-up.png"
     width="100"
     height="100"
 >}}
-{{< figure
+{{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/aux-in-selector.png"
     link="images/projects/rotel-rm-5010-restore/overview/aux-in-selector.png"
     width="100"
