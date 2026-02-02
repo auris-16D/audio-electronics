@@ -54,6 +54,13 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
     height="100"
 >}}
 
+{{< thumb
+    src="images/projects/rotel-rm-5010-restore/overview/Aux-in-LED-controls-cl-up.png"
+    link="images/projects/rotel-rm-5010-restore/overview/Aux-in-LED-controls-cl-up.png"
+    width="100"
+    height="100"
+>}}
+
 {{< /thumb-row >}}
 
 ### Switches and potentiometers (Rotary controls)
