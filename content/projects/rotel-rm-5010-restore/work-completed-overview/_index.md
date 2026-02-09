@@ -218,7 +218,7 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
 
 {{< thumb
     src="images/projects/rotel-rm-5010-restore/overview/led-tuner-gauge.png"
-    link="images/projects/rotel-rm-5010-restore/overview/lled-tuner-gauge.png"
+    link="images/projects/rotel-rm-5010-restore/overview/led-tuner-gauge.png"
     width="100"
     height="100"
 >}}
@@ -309,7 +309,7 @@ summary: "Summary Overview of Electrical and mechanical work completed for a Rot
     height="100"
 >}}
 {{< thumb
-    src="images/projects/rotel-rm-5010-restore/overview/aux-in-selector.png"
+    src= "images/projects/rotel-rm-5010-restore/overview/aux-in-selector.png"
     link="images/projects/rotel-rm-5010-restore/overview/aux-in-selector.png"
     width="100"
     height="100"
